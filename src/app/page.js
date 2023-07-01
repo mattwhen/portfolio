@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillTwitterCircle, AiFillLinkedin} from 'react-icons/ai';
-import Image from 'next/image'; 
-import profilePicture from '../../public/profilePic.jpeg'
+import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai';
+import Image from 'next/image';
+import profilePicture from '../../public/profilePic.jpeg';
 
 export default function Home() {
 	return (
@@ -19,27 +19,46 @@ export default function Home() {
 						<h1 className='text-xl font-burtons'>developer</h1>
 						<ul className='flex items-center'>
 							<li>
-                <BsFillMoonStarsFill className='cursor-pointer text-2xl'/>
-              </li>
+								<BsFillMoonStarsFill className='cursor-pointer text-2xl' />
+							</li>
 							<li>
-								<a className='bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a>
+								<a
+									className='bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-2 rounded-md ml-8'
+									href='#'
+								>
+									Resume
+								</a>
 							</li>
 							<li></li>
 						</ul>
 					</nav>
-          <div className='text-center p-8'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Matthew Nguyen</h2>
-            <h3 className='text-2xl py-2'>Developer and designer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800'>Full stack developer with a passion creating beautiful designs!</p>
-          </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-800'>
-            <AiFillTwitterCircle/>
-            <AiFillLinkedin/>
-          </div>
-          <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-100 flex justify-center'>
-            <Image className='shadow rounded-full max-w-full align-middle border-none w-3/4 ' src={profilePicture}/>
-          </div>
+					<div className='text-center p-8'>
+						<h2 className='text-5xl py-2 text-teal-600 font-medium'>
+							Matthew Nguyen
+						</h2>
+						<h3 className='text-2xl py-2'>Developer and designer</h3>
+						<p className='text-md py-5 leading-8 text-gray-800'>
+							Full stack developer with a passion creating beautiful designs!
+						</p>
+					</div>
+					<div className='text-5xl flex justify-center gap-16 py-3 text-gray-800'>
+						<a href='https://twitter.com/mattwhendev' target='_blank'>
+              <AiFillTwitterCircle />
+              </a>
+              <a href='https://www.linkedin.com/in/matthew-nguyen-1724b9132/' target='_blank'>
+						<AiFillLinkedin />
+              </a>
+					</div>
+					<div className='relative mx-auto mt-20 px-4 w-80 h-80 '>
+						<Image
+							className='shadow-lg rounded-full max-w-full h-auto align-middle border-none'
+							src={profilePicture}
+						/>
+					</div>
 				</section>
+        <div>
+          {/* <h3>Services</h3> */}
+        </div>
 			</main>
 		</div>
 	);
