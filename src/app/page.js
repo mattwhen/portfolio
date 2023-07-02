@@ -49,15 +49,23 @@ export default function Home() {
 						<AiFillLinkedin />
               </a>
 					</div>
-					<div className='relative mx-auto mt-20 px-4 w-80 h-80 '>
-						<Image
-							className='shadow-lg rounded-full max-w-full h-auto align-middle border-none'
+					<div className='relative mx-auto mt-20 w-100 h-100 rounded-full flex justify-center'>
+						<Image 
+							className='shadow-lg rounded-full max-w-full h-80 w-80 align-middle border-none '
 							src={profilePicture}
+							alt='Profile image'
 						/>
 					</div>
 				</section>
+		{/* Services section */}
+		<section>
+			<div>
+				<h3 className='text-3xl py-5'>Services</h3>
+				<p className='text-md py-5 leading-8 text-gray-800'></p>
+			</div>
+		</section>
         <div>
-          {/* <h3>Services</h3> */}
+
         </div>
 			</main>
 		</div>
