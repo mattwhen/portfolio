@@ -1,6 +1,10 @@
 import Head from 'next/head';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai';
+import {
+	AiFillTwitterCircle,
+	AiFillLinkedin,
+	AiFillGithub,
+} from 'react-icons/ai';
 import Image from 'next/image';
 import ProfileImg from '/public/profilePic.jpeg';
 import cultureCruncher from '/public/cultureCruncher-live-app.png';
@@ -19,7 +23,9 @@ export default function Home() {
 			<main className='bg-white px-10 md:px-20'>
 				<section className=' min-h-screen'>
 					<nav className='py-10 mb-12 flex justify-between'>
-						<h1 className='text-2xl font-burtons text-teal-600'>Portfolio</h1>
+						<h1 className='text-3xl font-burtons text-teal-600'>
+							Matthew&#39;s Portfolio
+						</h1>
 						<ul className='flex items-center'>
 							<li>
 								<BsFillMoonStarsFill className='cursor-pointer text-2xl' />
@@ -55,20 +61,22 @@ export default function Home() {
 						<h2 className='text-5xl py-2 text-teal-600 font-medium'>
 							Matthew Nguyen
 						</h2>
-						<h3 className='text-2xl py-2 my-5'>Web Developer</h3>
+						<h3 className='text-2xl py-2 my-5'>Frontend Developer</h3>
 						<p className='text-md py-2 leading-8 text-gray-800'>
-							Full stack developer with a passion creating beautiful designs!
+							Hi, my name is Matthew Nguyen. I am a passionate Frontend developer with a passion for creating beautiful designs!
 						</p>
+						<p className='text-md py-2 leading-8 text-gray-800'>Based in Houston, TX 🤘🏻</p> 
 					</div>
 					<div className='text-5xl flex justify-center gap-16 py-3 text-gray-800'>
-						<a href='https://twitter.com/mattwhendev' target='_blank'>
-							<AiFillTwitterCircle />
+						<a href='https://github.com/mattwhen/' target='_blank'>
+							<AiFillGithub />
 						</a>
 						<a
-							href='https://www.linkedin.com/in/matthew-nguyen-1724b9132/'
-							target='_blank'
-						>
+							href='https://www.linkedin.com/in/matthew-nguyen-1724b9132/' target='_blank'>
 							<AiFillLinkedin />
+						</a>
+						<a href='https://twitter.com/MatthewxNguyen' target='_blank'>
+							<AiFillTwitterCircle />
 						</a>
 					</div>
 					<div className='relative mx-auto mt-20 w-100 h-100 rounded-full flex justify-center'>
@@ -95,39 +103,40 @@ export default function Home() {
 							eiusmod tempor <span className=' text-teal-300'>incididunt</span>{' '}
 							ut labore et dolore magna aliqua. Pharetra convallis posuere morbi
 							leo urna molestie at elementum eu. Cursus sit amet dictum sit amet
-							justo donec enim. Aliquet eget sit amet tellus cras adipiscing. 
+							justo donec enim. Aliquet eget sit amet tellus cras adipiscing.
 						</p>
 					</div>
-				<div className='space-x-5 my-10'>
-					<div className='text-center shadow-xl max-w-md p-10'>
-						<Image
-							className='rounded-lg '
-							src={cultureCruncher}
-							alt='cultureCruncher project screenshot'
-						/>
-						<p className='text-gray-800 py-3'>Culture Cruncher</p>
-						<p className='text-gray-800 py-3'>Created by:</p>
-						<p className='text-gray-800 py-3'>Culture Cruncher</p>
+					<h3 className='text-3xl pt-10'>Projects</h3>
+					<div className='space-x-5 my-10 md:grid justify-items-center'>
+						<div className='text-center shadow-xl max-w-sm py-10 md:max-w-3xl'>
+							<Image
+								className='rounded-lg'
+								src={cultureCruncher}
+								alt='cultureCruncher project screenshot'
+							/>
+							<p className='text-gray-800 py-3'>Culture Cruncher</p>
+							<p className='text-gray-800 py-3'>Created by:</p>
+							<p className='text-gray-800 py-3'>Culture Cruncher</p>
+						</div>
+						<div className='text-center shadow-xl max-w-sm py-10 md:max-w-3xl'>
+							<Image
+								className='rounded-lg'
+								src={thingamabobs}
+								alt='screenshot of application'
+							/>
+							<p>test</p>
+							<p>test</p>
+						</div>
+						<div className='text-center shadow-xl max-w-sm py-10 md:max-w-3xl'>
+							<Image
+								className='rounded-lg'
+								src={newsletter}
+								alt='screenshot of application'
+							/>
+							<p>test</p>
+							<p>test</p>
+						</div>
 					</div>
-					<div className='text-center shadow-xl max-w-md py-10'>
-						<Image 
-							className='rounded-lg'
-							src={thingamabobs}
-							alt='screenshot of application'
-						/>
-						<p>test</p>
-						<p>test</p>
-					</div>
-					<div className='text-center shadow-xl max-w-md py-10'>
-						<Image 
-							className='rounded-lg'
-							src={newsletter}
-							alt='screenshot of application'
-						/>
-						<p>test</p>
-						<p>test</p>
-					</div>
-				</div>
 				</section>
 				<div></div>
 			</main>
