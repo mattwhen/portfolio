@@ -6,10 +6,10 @@ import {
 	AiFillGithub,
 } from 'react-icons/ai';
 import Image from 'next/image';
-import ProfileImg from '/public/profilePic.jpeg';
-import cultureCruncher from '/public/cultureCruncher-live-app.png';
-import thingamabobs from '/public/treethingamabobs-live-screenshot.png';
-import newsletter from '/public/newsletter-homepage-screenshot.png';
+import ProfileImg from '/public/images/profilePic.jpeg';
+import cultureCruncher from '/public/images/cultureCruncher-live-app.png';
+import thingamabobs from '/public/images/treethingamabobs-live-screenshot.png';
+import newsletter from '/public/images/newsletter-homepage-screenshot.png';
 
 export default function Home() {
 	return (
