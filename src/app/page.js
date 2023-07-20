@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { FiExternalLink } from 'react-icons/fi';
 import {
 	AiFillTwitterCircle,
 	AiFillLinkedin,
@@ -28,20 +28,17 @@ export default function Home() {
 						</h1>
 						<ul className='flex items-center'>
 							<li>
-								<BsFillMoonStarsFill className='cursor-pointer text-2xl' />
-							</li>
-							<li>
 								<a
-									className='bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-md px-4 py-2 ml-8'
+									className=' text-black  ml-8'
 									href='https://docs.google.com/document/d/1T551yPK1OGZIGVlfL3N4OmPsiL8Me3Vy_8FndueXiO8/edit?usp=sharing'
 									target='_blank'
 								>
 									Resume
 								</a>
 							</li>
-							{/* <li>
+							<li>
 								<a
-									className='bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-md px-4 py-2 ml-8'
+									className=' text-black  ml-8'
 									href='#'
 								>
 									Projects
@@ -49,12 +46,12 @@ export default function Home() {
 							</li>
 							<li>
 								<a
-									className='bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-md px-4 py-2 ml-8'
+									className=' text-black  ml-8'
 									href='#'
 								>
 									Contact
 								</a>
-							</li> */}
+							</li>
 						</ul>
 					</nav>
 					<div className='text-center p-10 py-10'>
@@ -63,16 +60,21 @@ export default function Home() {
 						</h2>
 						<h3 className='text-2xl py-2 my-5'>Frontend Developer</h3>
 						<p className='text-md py-2 leading-8 text-gray-800'>
-							Hi, my name is Matthew Nguyen. I am a passionate Frontend developer with a passion for creating beautiful designs!
+							Hi, my name is Matthew Nguyen. I am a passionate Frontend
+							developer with a passion for creating beautiful designs!
 						</p>
-						<p className='text-md py-2 leading-8 text-gray-800'>Based in Houston, TX 🤘🏻</p> 
+						<p className='text-md py-2 leading-8 text-gray-800'>
+							Based in Houston, TX 🤘🏻
+						</p>
 					</div>
 					<div className='text-5xl flex justify-center gap-16 py-3 text-gray-800'>
 						<a href='https://github.com/mattwhen/' target='_blank'>
 							<AiFillGithub />
 						</a>
 						<a
-							href='https://www.linkedin.com/in/matthew-nguyen-1724b9132/' target='_blank'>
+							href='https://www.linkedin.com/in/matthew-nguyen-1724b9132/'
+							target='_blank'
+						>
 							<AiFillLinkedin />
 						</a>
 						<a href='https://twitter.com/MatthewxNguyen' target='_blank'>
@@ -113,10 +115,28 @@ export default function Home() {
 								className='rounded-lg'
 								src={cultureCruncher}
 								alt='cultureCruncher project screenshot'
+								href=''
 							/>
-							<p className='text-gray-800 py-3'>Culture Cruncher</p>
-							<p className='text-gray-800 py-3'>Created by:</p>
-							<p className='text-gray-800 py-3'>Culture Cruncher</p>
+							<p className='text-gray-800 py-5 text-2xl'>Culture Cruncher</p>
+							<p>A full stack </p>
+							<div className='flex justify-around'>
+								<div className='w-40'>
+									<a
+										href='https://github.com/dbradley555/culture-cruncher'
+										target='_blank'>
+										<span className='px-2'>Github</span>
+										<AiFillGithub className='text-3xl display: inline-block' />
+									</a>
+								</div>
+								<div>
+									<a
+										href='https://github.com/dbradley555/culture-cruncher'
+										target='_blank'>
+										<span className='px-2'>Deployment</span>
+										<FiExternalLink className='text-3xl display: inline-block' />
+									</a>
+								</div>
+							</div>
 						</div>
 						<div className='text-center shadow-xl max-w-sm py-10 md:max-w-3xl'>
 							<Image
@@ -124,8 +144,14 @@ export default function Home() {
 								src={thingamabobs}
 								alt='screenshot of application'
 							/>
-							<p>test</p>
-							<p>test</p>
+							<div className='flex space-x-5 justify-center'>
+								<button className='bg-gradient-to-r from-sky-500 to-sky-900 rounded-md px-4 py-2 text-white shadow-lg'>
+									Github Repo:
+								</button>
+								<button className='bg-gradient-to-r from-sky-500 to-sky-900 rounded-md px-4 py-2 text-white shadow-2xl'>
+									Github Repo:
+								</button>
+							</div>
 						</div>
 						<div className='text-center shadow-xl max-w-sm py-10 md:max-w-3xl'>
 							<Image
