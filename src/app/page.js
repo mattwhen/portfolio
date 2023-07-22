@@ -6,11 +6,12 @@ import {
 	AiFillGithub,
 } from 'react-icons/ai';
 import Image from 'next/image';
-import Hamburger from './Hamburger';
+import Hamburger from './Components/Hamburger';
 import ProfileImg from '/public/images/profilePic.jpeg';
 import cultureCruncher from '/public/images/cultureCruncher-live-app.png';
 import thingamabobs from '/public/images/treethingamabobs-live-screenshot.png';
 import newsletter from '/public/images/newsletter-homepage-screenshot.png';
+import Footer from './Components/Footer';
 
 export default function Home() {
 	return (
@@ -22,11 +23,9 @@ export default function Home() {
 			</Head>
 
 			<main className='bg-white px-10 md:px-20'>
-				<section className=' min-h-screen'>
+				<section id='about-me-section' className='min-h-screen'>
 					<nav className='py-10 mb-12 flex justify-between'>
-						<h1 className='text-3xl font-burtons text-stone-950'>
-							Portfolio
-						</h1>
+						<h1 className='text-3xl font-burtons text-stone-950'>Portfolio</h1>
 						<ul className='flex items-center'>
 							<li>
 								<a
@@ -42,106 +41,81 @@ export default function Home() {
 									Projects
 								</a>
 							</li>
-							<li>
-								<a className=' text-black  ml-8' href='#'>
-									Contact
-								</a>
-							</li>
 						</ul>
 					</nav>
-					<div className='text-center p-10 py-10'>
-						<h2 className='text-5xl py-2 text-teal-600 font-medium'>
+					<div className='text-center p-10'>
+						<h2 className='text-5xl py-2 text-cyan-600 font-medium'>
 							Matthew Nguyen
 						</h2>
 						<h3 className='text-2xl py-2 my-5'>Frontend Developer</h3>
 						<p className='text-md py-2 leading-8 text-gray-800'>
-							Hi, my name is Matthew Nguyen. I am a passionate Frontend
-							developer with a passion for creating beautiful designs!
-						</p>
-						<p className='text-md py-2 leading-8 text-gray-800'>
-							Based in Houston, TX 🤘🏻
+							Hi, my name is Matthew Nguyen, and I am Frontend developer based
+							in Houston, TX 🤘🏻
 						</p>
 					</div>
-					<div className='text-5xl flex justify-center gap-16 py-3 text-gray-800'>
-						<a href='https://github.com/mattwhen/' target='_blank'>
-							<AiFillGithub />
-						</a>
-						<a
-							href='https://www.linkedin.com/in/matthew-nguyen-1724b9132/'
-							target='_blank'
-						>
-							<AiFillLinkedin />
-						</a>
-						<a href='https://twitter.com/MatthewxNguyen' target='_blank'>
-							<AiFillTwitterCircle />
-						</a>
-					</div>
-					<div className='relative shadow-lg mx-auto mt-20 rounded-md flex justify-around md: max-w-md'>
+					<div className='relative shadow-lg mx-auto mt-20 rounded-md justify-around  md: grid justify-items-center'>
 						<Image
 							className='shadow-lg rounded-md max-w-full align-middle border-none'
 							src={ProfileImg}
 							alt='self-portrait'
 						/>
 						<div className='px-5'>
-							<h3 className='text-3xl py-4 px-4'>About Me</h3>
+							<h3 className='text-3xl py-5 mt-5 px-4'>About Me</h3>
 							<div className='text-md py-4 px-4 leading-8'>
-							<p>
-								Hi there 👋🏼 , my name is Matthew Nguyen, and I am Frontend developer based in Houston, TX 📍
-							</p>
-							<p className='my-5'>
-								My passion in creating beautiful web designs is what led me to become a Frontend developer. 
-							</p>
+								<p className='my-5'>
+									My passion in creating beautiful web designs is what led me to
+									become a Frontend developer. Look forward to working with you!
+								</p>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section>
-					<div className='space-x-5 my-10 md:grid justify-items-center'>
-					<h3 className='text-3xl my-4'>Projects</h3>
-						<div className='text-center shadow-xl max-w-sm py-10 md:max-w-3xl'>
-							<Image
-								className='rounded-lg'
-								src={cultureCruncher}
-								alt='cultureCruncher project screenshot'
-							/>
-							<p className='text-gray-800 py-5 text-2xl'>Culture Cruncher</p>
-							<p className='text-md px-5'>
-								A front end web application that is targeted towards travelers
-								or food enthusiasts, that displays specific about a country such
-								as currency and population
-							</p>
-							<p>
-								While also rendering a video from Youtube that ties a specific
-								cuisine to the country searched.
-							</p>
-							<div className='flex justify-around py-8'>
-								<div className='w-40'>
-									<a
-										href='https://github.com/dbradley555/culture-cruncher'
-										target='_blank'
-									>
-										<span className='px-2'>Github</span>
-										<AiFillGithub className='text-3xl display: inline-block' />
-									</a>
-								</div>
-								<div>
-									<a
-										href='https://dbradley555.github.io/culture-cruncher/'
-										target='_blank'
-									>
-										<span className='px-2'>Try it out!</span>
-										<FiExternalLink className='text-3xl display: inline-block' />
-									</a>
+
+				{/* PROJECT SECTION START HERE */}
+				<section id='project-section'>
+					<div className='mt-36'>
+						<h3 className='text-3xl my-4 text-center'>Projects</h3>
+						<div className='text-center max-w-sm py-10 md:max-w-3xl'>
+							<div id='project-1' className=' shadow-lg'>
+								<Image
+									className='rounded-lg'
+									src={cultureCruncher}
+									alt='cultureCruncher project screenshot'
+								/>
+								<p className='text-gray-800 py-5 text-2xl'>Culture Cruncher</p>
+								<p className='text-md px-5'>
+									A web application that displays specific about a
+									country such as currency and population. Renders a Youtube video that displays a common cuisine in that region.
+								</p>
+								<div className='flex justify-around py-8'>
+									<div className='w-40'>
+										<a
+											href='https://github.com/dbradley555/culture-cruncher'
+											target='_blank'
+										>
+											<span className='px-2'>Github</span>
+											<AiFillGithub className='text-3xl display: inline-block' />
+										</a>
+									</div>
+									<div>
+										<a
+											href='https://dbradley555.github.io/culture-cruncher/'
+											target='_blank'
+										>
+											<span className='px-2'>Try it out!</span>
+											<FiExternalLink className='text-3xl display: inline-block' />
+										</a>
+									</div>
 								</div>
 							</div>
 
-							<div className='text-center shadow-xl max-w-sm py-10 md:max-w-3xl'>
+							<div id='project-2' className=' shadow-lg'>
 								<Image
 									className='rounded-lg'
 									src={thingamabobs}
 									alt='e-commerce landing page screenshot'
 								/>
-								<p className='text-gray-800 py-5 text-2xl'>Culture Cruncher</p>
+								<p className='text-gray-800 py-5 text-2xl'>Thingamabobs</p>
 								<p>A full stack </p>
 								<div className='flex justify-around'>
 									<div className='w-40'>
@@ -164,7 +138,7 @@ export default function Home() {
 									</div>
 								</div>
 							</div>
-							<div className='text-center shadow-xl max-w-sm py-10 md:max-w-3xl'>
+							<div id='project-3' className=' shadow-lg'>
 								<Image
 									className='rounded-lg'
 									src={newsletter}
@@ -199,8 +173,9 @@ export default function Home() {
 						</div>
 					</div>
 				</section>
-				<div></div>
+				{/* PROJECT SECTION ENDS HERE */}
 			</main>
+			<Footer />
 		</div>
 	);
 }
