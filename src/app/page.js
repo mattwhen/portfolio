@@ -83,12 +83,12 @@ export default function Home() {
 									alt='cultureCruncher project screenshot'
 								/>
 								<p className='text-gray-800 py-5 text-2xl'>Culture Cruncher</p>
-								<p className='text-md px-5'>
+								<p className='text-md py-5'>
 									A web application that displays specific about a
 									country such as currency and population. Renders a Youtube video that displays a common cuisine in that region.
 								</p>
 								<div className='flex justify-around py-8'>
-									<div className='w-40'>
+									<div className='flex gap-10'>
 										<a
 											href='https://github.com/dbradley555/culture-cruncher'
 											target='_blank'
@@ -96,8 +96,7 @@ export default function Home() {
 											<span className='px-2'>Github</span>
 											<AiFillGithub className='text-3xl display: inline-block' />
 										</a>
-									</div>
-									<div>
+				
 										<a
 											href='https://dbradley555.github.io/culture-cruncher/'
 											target='_blank'
@@ -116,9 +115,9 @@ export default function Home() {
 									alt='e-commerce landing page screenshot'
 								/>
 								<p className='text-gray-800 py-5 text-2xl'>Thingamabobs</p>
-								<p>A full stack </p>
-								<div className='flex justify-around'>
-									<div className='w-40'>
+								<p className='text-md py-5'>A full stack </p>
+								<div className='flex justify-around py-8'>
+									<div className='flex gap-10'>
 										<a
 											href='https://github.com/treecao/thingamabobs'
 											target='_blank'
@@ -126,13 +125,12 @@ export default function Home() {
 											<span className='px-2'>Github</span>
 											<AiFillGithub className='text-3xl display: inline-block' />
 										</a>
-									</div>
-									<div>
+
 										<a
 											href='https://treethingamabobs.herokuapp.com/'
 											target='_blank'
 										>
-											<span className='px-2'>Deployment</span>
+											<span className='px-2'>Try it out!</span>
 											<FiExternalLink className='text-3xl display: inline-block' />
 										</a>
 									</div>
@@ -148,9 +146,9 @@ export default function Home() {
 								<p className='text-gray-800 py-5 text-2xl'>
 									Newsletter sign-up landing page
 								</p>
-								<p>A full stack </p>
-								<div className='flex justify-around'>
-									<div className='w-40'>
+								<p className='text-md py-5'>A full stack </p>
+								<div className='flex justify-around py-8'>
+									<div className='flex gap-10'>
 										<a
 											href='https://github.com/mattwhen/newsletter-signup'
 											target='_blank'
@@ -158,13 +156,12 @@ export default function Home() {
 											<span className='px-2'>Github</span>
 											<AiFillGithub className='text-3xl display: inline-block' />
 										</a>
-									</div>
-									<div>
+
 										<a
 											href='https://mattwhen.github.io/newsletter-signup/'
 											target='_blank'
 										>
-											<span className='px-2'>Deployment</span>
+											<span className='px-2'>Try it out!</span>
 											<FiExternalLink className='text-3xl display: inline-block' />
 										</a>
 									</div>
