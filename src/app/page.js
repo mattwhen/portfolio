@@ -54,9 +54,9 @@ export default function Home() {
 							in Houston, TX 🤘🏻
 						</p>
 					</div>
-					<div className='relative shadow-lg mx-auto mt-20 rounded-md justify-around  md: grid justify-items-center'>
+					<div id='about-wrapper' className='relative shadow-lg mx-auto mt-20'>
 						<Image
-							className='shadow-lg rounded-md max-w-full align-middle border-none'
+							className='w-72 h-72 rounded-full'
 							src={ProfileImg}
 							alt='self-portrait'
 						/>
