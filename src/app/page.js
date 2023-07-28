@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { FiExternalLink } from 'react-icons/fi';
 import { AiFillGithub } from 'react-icons/ai';
 import Image from 'next/image';
-import Hamburger from './Components/Hamburger';
+import { CiMenuBurger } from 'react-icons/ci';
 import ProfileImg from '/public/images/profilePic.jpeg';
 import cultureCruncher from '/public/images/cultureCruncher-live-app.png';
 import thingamabobs from '/public/images/treethingamabobs-live-screenshot.png';
@@ -23,21 +23,22 @@ export default function Home() {
 			<main className='bg-white px-10 md:px-20'>
 				<section id='about-me-section' className='min-h-screen'>
 					<nav className='py-10 mb-12 flex justify-between'>
-						<h1 className='text-3xl font-burtons text-stone-950'>Portfolio</h1>
-						<ul className='flex items-center'>
+					<CiMenuBurger className='text-2xl lg:hidden' />
+						<h1 className='text-right lg:visible text-3xl font-burtons text-stone-950'>Portfolio</h1>
+						<ul className='flex justify-evenly items-center'>
 							<li>
 								<a
 									href='https://docs.google.com/document/d/1T551yPK1OGZIGVlfL3N4OmPsiL8Me3Vy_8FndueXiO8/edit?usp=sharing'
 									target='_blank'
 								>
-									<button className='transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-100'>
+									<button className='invisible lg:visible rounded-md mx-5 py-2 px-2 hover:bg-slate-300'>
 										Resume
 									</button>
 								</a>
 							</li>
 							<li>
 								<a href='#projects'>
-									<button className=' text-black  ml-8 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:duration-100'>
+									<button className='invisible lg:visible  rounded-md mx-5 py-2 px-2 hover:bg-slate-300'>
 										Projects
 									</button>
 								</a>
@@ -49,12 +50,15 @@ export default function Home() {
 							Matthew Nguyen
 						</h2>
 						<h3 className='text-2xl py-2 my-5'>Web Developer</h3>
-						<p className='text-md py-2 leading-8 text-gray-800'>
+						<p className='text-md py-2 leading-8 text-gray-800 lg: text-xl'>
 							Hi, my name is Matthew Nguyen, and I am Frontend developer based
 							in Houston, TX 🤘🏻
 						</p>
 					</div>
-					<div id='about-wrapper' className='relative shadow-lg mx-auto mt-20'>
+					<div
+						id='about-wrapper'
+						className='relative shadow-md mx-auto mt-20 lg:w-1/2 flex flex-col items-center'
+					>
 						<Image
 							className='w-72 h-72 rounded-full'
 							src={ProfileImg}
@@ -63,7 +67,7 @@ export default function Home() {
 						<div className='px-5'>
 							<h3 className='text-3xl py-5 mt-5 px-4'>About Me</h3>
 							<div className='text-md py-4 px-4 leading-8'>
-								<p className='my-5'>
+								<p className='my-5 lg: text-lg'>
 									My passion in creating beautiful web designs is what led me to
 									become a Frontend developer. Look forward to working with you!
 								</p>
@@ -73,13 +77,13 @@ export default function Home() {
 				</section>
 
 				{/* PROJECT SECTION START HERE */}
-				<section id='project-section'>
-					<div className='mt-20 mb-10'>
-						<h3 id='projects' className='text-3xl my-4 text-center'>
+				<section id='project-section' className='lg: flex justify-center'>
+					<div className='mt-20 mb-20 lg:mt-0'>
+						<h3 id='projects' className='text-3xl text-center'>
 							Projects
 						</h3>
 						<div className='text-center max-w-sm py-10 md:max-w-3xl flex flex-col gap-y-20'>
-							<div id='project-1' className=' shadow-lg'>
+							<div id='project-1' className=' shadow-md'>
 								<a
 									href='https://dbradley555.github.io/culture-cruncher/'
 									target='_blank'
@@ -117,7 +121,7 @@ export default function Home() {
 								</div>
 							</div>
 
-							<div id='project-2' className=' shadow-lg'>
+							<div id='project-2' className=' shadow-md'>
 								<a
 									href='https://github.com/treecao/thingamabobs'
 									target='_blank'
@@ -155,7 +159,7 @@ export default function Home() {
 									</div>
 								</div>
 							</div>
-							<div id='project-3' className=' shadow-lg'>
+							<div id='project-3' className=' shadow-md'>
 								<a
 									href='https://mattwhen.github.io/newsletter-signup/'
 									target='_blank'
@@ -169,7 +173,17 @@ export default function Home() {
 								<p className='text-gray-800 py-8 text-2xl'>
 									Newsletter landing page
 								</p>
-								<p className='text-md py-5'>A full stack </p>
+								<p className='text-md py-5'>
+									A simple landing page inspired from{' '}
+									<a
+										className=' text-blue-500'
+										href='https://www.frontendmentor.io'
+										target='_blank'
+									>
+										Frontend Mentor
+									</a>{' '}
+									translating a visual design into code!
+								</p>
 								<div className='flex justify-around py-8'>
 									<div className='flex gap-10'>
 										<a

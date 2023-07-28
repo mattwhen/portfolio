@@ -1,13 +1,12 @@
 import React from 'react';
+import RxHamburgerMenu from 'react-icons';
 
 const Hamburger = () => {
 	return (
-		<div className='hamburger'>
-			<div className='burger burger1' />
-			<div className='burger burger2' />
-			<div className='burger burger3' />
-      <p>HAMBURGER!!</p>
-		</div>
+		<>
+			<RxHamburgerMenu />
+
+		</>
 	);
 };
 
