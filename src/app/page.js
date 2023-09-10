@@ -19,11 +19,15 @@ export default function Home() {
 
 			<main className='bg-white '>
 				<nav className='py-5 flex align-middle justify-between shadow-sm z-50 fixed w-full bg-white'>
+					<div className='flex justify-between'>
 					<h1 className='text-right sm:pl-5 sm:text-lg lg:visible lg:text-2xl flex items-center font-bold text-stone-950 pl-10'>
 						mattwhen.com
 					</h1>
+					</div>
+					<div className='pr-5'>
 					<Hamburger className='text-2xl lg:hidden' />
-					<ul className='sm:hidden lg:flex justify-evenly items-center'>
+					</div>
+					<ul className='sm:hidden lg:flex justify-around items-center'>
 						<li>
 							<a
 								href='https://docs.google.com/document/d/1T551yPK1OGZIGVlfL3N4OmPsiL8Me3Vy_8FndueXiO8/edit?usp=sharing'

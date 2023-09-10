@@ -12,13 +12,6 @@ const Hamburger = () => {
 	// 2. The set function that lets you update the state to a different value
 	const [navOpen, setNavOpen] = useState(false);
 
-	// // Prevent/hide scrolling when the Navigation menu is opened.
-	if (navOpen) {
-		document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-	} else {
-		document.getElementsByTagName('body')[0].style.overflow = 'visible';
-	}
-
 	return (
 		<>
 					<div className='hamburger-icon'>
