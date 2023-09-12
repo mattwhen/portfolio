@@ -51,6 +51,14 @@ const Hamburger = () => {
 								PROJECTS
 							</a>
 						</li>
+						<li className=' border-gray-400 '>
+							<a
+								href='#contact'
+								onClick={() => (navOpen ? setNavOpen(false) : setNavOpen(true))}
+							>
+								CONTACT
+							</a>
+						</li>
 					</ul>
 				</section>
 		</>

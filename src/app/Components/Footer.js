@@ -8,8 +8,6 @@ import {
 const Footer = () => {
 	return (
         <footer className='flex flex-col justify-center  bg-slate-600 py-10 font-bold'>
-
-                <p className='text-lg flex justify-center mb-5'>Follow me on Social Media:</p>
 			<div className='flex justify-center items-center gap-10 text-4xl'>
 				<a href='https://github.com/mattwhen/' target='_blank'>
 					<AiFillGithub />
