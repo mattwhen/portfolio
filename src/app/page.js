@@ -4,7 +4,6 @@ import Head from 'next/head';
 import { FiExternalLink } from 'react-icons/fi';
 import { AiFillGithub } from 'react-icons/ai';
 import Image from 'next/image';
-import Hamburger from './Components/Hamburger';
 import cultureCruncher from '/public/images/cultureCruncher-live-app.png';
 import thingamabobs from '/public/images/treethingamabobs-live-screenshot.png';
 import newsletter from '/public/images/newsletter-homepage-screenshot.png';
@@ -28,33 +27,33 @@ export default function Home() {
 				>
 					<div className='text-md py-4'>
 						<div>
-							<h1 className='text-sm mb-5 text-black font-medium'>
+							<h1 className='fade-in-text text-sm mb-5 text-black font-medium'>
 								Hi there, my name is
 							</h1>
 						</div>
 						<div>
-							<h2 className='text-md mb-5 text-gray-800 font-bold lg:text-6xl sm:text-4xl'>
+							<h2 className='fade-in-text text-md mb-5 text-blue-500 font-bold lg:text-6xl sm:text-4xl'>
 								Matthew Nguyen
 							</h2>
 						</div>
 						<div>
-							<h2>And I like to build things.</h2>
+							<h2 className='fade-in-text '>And I like to build things.</h2>
 						</div>
 						<div>
-							<p className='my-5 lg:text-lg'>
+							<p className='fade-in-text my-5 lg:text-lg'>
 								I&apos;m a Web Developer passionate in creating beautiful web designs,
-								based in Houston, TX 🤘🏻.
+								based in Houston, TX 🤘🏻
 							</p>
 						</div>
 						<div>
-							<p>Look forward to working with you!</p>
+							<p className='fade-in-text '>Look forward to working with you!</p>
 						</div>
 					</div>
 				</section>
 				<About/>
 				{/* PROJECT SECTION START HERE */}
 				<section id='project-section' className='lg: flex justify-center'>
-					<div className='mt-20 mb-20 lg:mt-0' id='projects'>
+					<div className='mb-20 lg:mt-0' id='projects'>
 						<h3 className='text-3xl text-center mt-20 font-bold'>
 							Projects
 						</h3>

@@ -12,12 +12,18 @@ const Hamburger = () => {
 	// 2. The set function that lets you update the state to a different value
 	const [navOpen, setNavOpen] = useState(false);
 
+	// if (navOpen) {
+	// 	document.body.style.overflow = 'hidden';
+	// } else {
+	// 	document.body.style.overflow = 'visible';
+	// }
+
 	return (
 		<>
 					<div className='hamburger-icon'>
 						<a
 							href='#home'
-							className='text-4xl flex align-middle text-gray-500 md:hidden lg:hidden'
+							className='text-4xl flex align-middle text-black md:hidden lg:hidden'
 							onClick={() => (navOpen ? setNavOpen(false) : setNavOpen(true))}
 						>
 							{navOpen ? (

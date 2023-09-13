@@ -2,6 +2,7 @@ import React from 'react';
 import Hamburger from './Hamburger';
 
 const Nav = () => {
+
   return (
     <>
       	<nav className='py-5 flex align-middle justify-between shadow-sm z-50 fixed w-full bg-white'>
@@ -21,7 +22,7 @@ const Nav = () => {
 					<ul className='sm:hidden lg:flex justify-around items-center'>
 						<li>
 							<a
-								href='https://docs.google.com/document/d/1T551yPK1OGZIGVlfL3N4OmPsiL8Me3Vy_8FndueXiO8/edit?usp=sharing'
+								href='https://docs.google.com/document/d/1PZulJi5XldPfTHpE1n50ucLkwBEiDmUWwMJ7oQZJ5_c/edit?usp=sharing'
 								target='_blank'
 							>
 								<button className='invisible lg:visible rounded-md mx-5 py-2 px-2 font-bold hover:text-cyan-500'>
