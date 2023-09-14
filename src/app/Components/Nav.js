@@ -10,7 +10,7 @@ const Nav = () => {
 						<h1 className='text-right sm:pl-5 sm:text-lg lg:visible lg:text-2xl flex items-center font-bold text-stone-950 pl-10'>
 							<a
 								onClick={() => location.reload()}
-								className='hover:cursor-pointer hover:text-cyan-500'
+								className='hover:cursor-pointer hover:text-blue-500'
 							>
 								mattwhen.com
 							</a>
@@ -22,18 +22,34 @@ const Nav = () => {
 					<ul className='sm:hidden lg:flex justify-around items-center'>
 						<li>
 							<a
+								href='#about'
+							>
+								<button className='invisible lg:visible rounded-md mx-5 py-2 px-2 font-bold hover:text-blue-500'>
+									About 
+								</button>
+							</a>
+						</li>
+						<li>
+							<a
 								href='https://docs.google.com/document/d/1PZulJi5XldPfTHpE1n50ucLkwBEiDmUWwMJ7oQZJ5_c/edit?usp=sharing'
 								target='_blank'
 							>
-								<button className='invisible lg:visible rounded-md mx-5 py-2 px-2 font-bold hover:text-cyan-500'>
+								<button className='invisible lg:visible rounded-md mx-5 py-2 px-2 font-bold hover:text-blue-500'>
 									Resume
 								</button>
 							</a>
 						</li>
 						<li>
 							<a href='#projects'>
-								<button className='invisible lg:visible  rounded-md mx-5 py-2 px-2 font-bold hover:text-cyan-500'>
+								<button className='invisible lg:visible  rounded-md mx-5 py-2 px-2 font-bold hover:text-blue-500'>
 									Projects
+								</button>
+							</a>
+						</li>
+						<li>
+							<a href='#contact'>
+								<button className='invisible lg:visible  rounded-md mx-5 py-2 px-2 font-bold hover:text-blue-500'>
+									Contact
 								</button>
 							</a>
 						</li>

@@ -23,11 +23,11 @@ export default function Home() {
 			<main className='bg-slate-100 p-10'>
 				<section
 					id='hero-section'
-					className='flex flex-col justify-center items-center min-h-screen p-10 text-start lg:px-32'
+					className='flex flex-col justify-center items-center min-h-screen text-start lg:px-32'
 				>
 					<div className='text-md py-4'>
 						<div>
-							<h1 className='fade-in-text text-sm mb-5 text-black font-medium'>
+							<h1 className='fade-in-text text-sm mb-5 text-black font-medium lg:text-lg'>
 								Hi there, my name is
 							</h1>
 						</div>
@@ -37,7 +37,7 @@ export default function Home() {
 							</h2>
 						</div>
 						<div>
-							<h2 className='fade-in-text '>And I like to build things.</h2>
+							<h2 className='fade-in-text text-blue-500 font-semibold lg:text-lg'>And I like to build things.</h2>
 						</div>
 						<div>
 							<p className='fade-in-text my-5 lg:text-lg'>
