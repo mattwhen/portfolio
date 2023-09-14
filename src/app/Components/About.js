@@ -8,7 +8,8 @@ const About = () => {
 			<h2 className='fade-in-text text-3xl font-bold text-center mb-10 lg:mb-28 lg:mt-28 lg:pt-10'>
 				About Me
 			</h2>
-			<div className='about-me flex flex-col mb-20 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:ml-40 lg:mr-20 lg:mb-40 lg:auto-cols-max'>
+            <div className='flex justify-center'>
+			<div className='about-me-grid flex flex-col mb-20 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:mb-40 lg:auto-cols-min lg:w-1/2'>
 				<div className='profile-wrapper'>
 					<div className='profile-icon flex justify-center mb-10'>
 						<Image
@@ -32,10 +33,11 @@ const About = () => {
 						developers!
 					</p>
 					<p className='pb-16 lg:text-start lg:pl-10 lg:pr-10'>
-						In my free time, I like to travel, go running, play video games. Also, don&apos;t judge me for this, but I LOVE to eat!
+						In my free time, I like to travel, run outdoors, play video games. Also, don&apos;t judge me for this, but I LOVE to eat!
 					</p>
 				</div>
 			</div>
+            </div>
 			<div className='my-tech-stack'>
 				<h2 className='text-center text-slate-800 underline underline-offset-1 pb-8 text-2xl'>
 					Tech Stack
