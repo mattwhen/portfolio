@@ -12,11 +12,17 @@ const Hamburger = () => {
 	// 2. The set function that lets you update the state to a different value
 	const [navOpen, setNavOpen] = useState(false);
 
-	// if (navOpen) {
-	// 	document.body.style.overflow = 'hidden';
-	// } else {
-	// 	document.body.style.overflow = 'visible';
-	// }
+	
+	const navOpenHandler = () => {
+		if (navOpen) {
+			document.body.style.overflow = 'visible';
+			setNavOpen(false);
+		} else {
+			document.body.style.overflow = 'hidden';
+			setNavOpen(true);
+		}
+		
+	}
 
 	return (
 		<>
@@ -24,7 +30,7 @@ const Hamburger = () => {
 						<a
 							href='#home'
 							className='text-4xl flex align-middle text-black md:hidden lg:hidden'
-							onClick={() => (navOpen ? setNavOpen(false) : setNavOpen(true))}
+							onClick={navOpenHandler}
 						>
 							{navOpen ? (
 								<RxCross1 className='z-50 transition-all' />
@@ -39,7 +45,7 @@ const Hamburger = () => {
 					>
 						<li className=' border-gray-400'>
 							<a
-								href='#resume'
+								href='https://docs.google.com/document/d/1PZulJi5XldPfTHpE1n50ucLkwBEiDmUWwMJ7oQZJ5_c/edit?usp=sharing'
 								onClick={() => {
 									document.body.scrollTop = 0;
 									document.documentElement.scrollTop = 0;
