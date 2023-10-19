@@ -12,7 +12,7 @@ const Nav = () => {
 								onClick={() => location.reload()}
 								className='hover:cursor-pointer hover:text-blue-500'
 							>
-								mattwhen.com
+								matthew-nguyen.dev
 							</a>
 						</h1>
 					</div>
@@ -24,7 +24,7 @@ const Nav = () => {
 							<a
 								href='#about'
 							>
-								<button className='invisible lg:visible rounded-md mx-5 py-2 px-2 font-bold hover:text-blue-500'>
+								<button className='invisible lg:visible mx-5 py-2 px-2 font-bold hover:bg-sky-500 hover:text-white transition-colors'>
 									About 
 								</button>
 							</a>
