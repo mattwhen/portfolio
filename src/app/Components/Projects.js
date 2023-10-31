@@ -122,51 +122,6 @@ const Projects = () => {
 								</div>
 							</div>
 						</div>
-						<div id='project-4' className=' p-5 shadow-md hover:bg-zinc-100'>
-							<a
-								href='https://mattwhen.github.io/newsletter-signup/'
-								target='_blank'
-							>
-								<Image
-									className='rounded-lg'
-									src={newsletter}
-									alt='cultureCruncher project screenshot'
-								/>
-							</a>
-							<p className='text-gray-800 py-8 text-2xl'>
-								Newsletter landing page
-							</p>
-							<p className='text-md py-5'>
-								A simple landing page inspired from{' '}
-								<a
-									className=' text-blue-500'
-									href='https://www.frontendmentor.io'
-									target='_blank'
-								>
-									Frontend Mentor
-								</a>{' '}
-								translating a visual design into code!
-							</p>
-							<div className='flex justify-around py-8'>
-								<div className='flex gap-10'>
-									<a
-										href='https://github.com/mattwhen/newsletter-signup'
-										target='_blank'
-									>
-										<span className='px-2'>Github</span>
-										<AiFillGithub className='text-3xl display: inline-block' />
-									</a>
-
-									<a
-										href='https://mattwhen.github.io/newsletter-signup/'
-										target='_blank'
-									>
-										<span className='px-2'>Try it out!</span>
-										<FiExternalLink className='text-3xl display: inline-block' />
-									</a>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</section>

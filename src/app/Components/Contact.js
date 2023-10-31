@@ -1,22 +1,25 @@
 import React from 'react';
-
+import { TfiEmail } from 'react-icons/tfi';
 
 const Contact = () => {
-  return (
-    <>
-      <div className='footer-section flex flex-col items-center bg-slate-100 pb-20' id='contact'>
-        <div className='mb-10'>
-          <h2 className='text-3xl font-bold'>Let&apos;s keep in touch!</h2>
-        </div>
-        <div className='mb-10'>
-          <p className=''>Looking to connect with me for opportunities? Or simply just want to say hello? </p>
-        </div>
-        <div className=''>
-         <button className='rounded-md border border-black p-4 hover:bg-cyan-500 hover:border-cyan-500'><a href='mailto:matt@mattwhen.com'>Contact me!</a></button>
-        </div>
-      </div>
-    </>
-  );
-}
+	return (
+		<>
+    <div className='mt-12'>
+			<div
+				className='footer-section flex flex-col items-center bg-slate-100 pb-20'
+				id='contact'
+			>
+				<div className='mb-10'>
+					<h2 className='text-3xl font-bold'>Contact</h2>
+				</div>
+				<div className='flex justify-between items-center w-3/6'>
+					<TfiEmail className=' text-4xl' />
+          <p className='text-2xl'>matt.nguyen741@gmail.com</p>
+				</div>
+			</div>
+    </div>
+		</>
+	);
+};
 
 export default Contact;
