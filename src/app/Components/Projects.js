@@ -18,7 +18,7 @@ const Projects = () => {
 							<div className='flex justify-center'>
 								<a href='https://mattwhen.github.io/fetchcoin/' target='_blank' className='md:w-3/4'>
 									<Image
-										className='rounded-lg w-full md:w-full'
+										className='rounded-lg'
 										src={fetchcoin}
 										alt='fetchcoin project screenshot'
 									/>

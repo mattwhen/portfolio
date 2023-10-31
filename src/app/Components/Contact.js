@@ -12,7 +12,7 @@ const Contact = () => {
 				<div className='mb-10'>
 					<h2 className='text-3xl font-bold'>Contact</h2>
 				</div>
-				<div className='flex justify-between items-center w-3/6'>
+				<div className='flex justify-between items-center w-96'>
 					<TfiEmail className=' text-4xl' />
           <p className='text-2xl'>matt.nguyen741@gmail.com</p>
 				</div>
