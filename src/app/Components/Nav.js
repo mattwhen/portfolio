@@ -40,8 +40,8 @@ const Nav = () => {
 					{mapNavHeader.map((item) => {
 						return (
 						<li key={item.id}>
-							<a href={item.href} className='mx-0'>
-								<button className='invisible lg:visible mx-5 font-bold hover:text-sky-500 transition-colors'>
+							<a href={item.href} className='mx-5'>
+								<button className='invisible lg:visible font-bold hover:text-sky-500 transition-colors'>
 									{item.name}
 								</button>
 							</a>
