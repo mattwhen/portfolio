@@ -23,7 +23,7 @@ const Projects = () => {
 			],
 			deployment: [
 				'https://mattwhen.github.io/fetchcoin/',
-				'movie-catalog-ecru.vercel.app',
+				'https://movie-catalog-ecru.vercel.app/',
 				'https://treethingamabobs.herokuapp.com/',
 			],
 			alt: [
