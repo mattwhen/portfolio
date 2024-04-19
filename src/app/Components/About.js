@@ -11,11 +11,11 @@ const About = () => {
 			<div className='flex justify-center'>
 				<div className='about-me-grid flex flex-col mb-20 md:grid lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:mb-10 lg:auto-cols-max lg:max-w-5xl'>
 					<div className='profile-wrapper'>
-						<div className='profile-icon flex justify-center mb-10'>
+						<div className='profile-icon flex justify-center mb-10 lg:rounded-md'>
 							<Image
-								className='rounded-full w-56 h-56 border-4 border-black md:w-80 md:h-80 lg:rounded-md'
-								height={500}
-								width={500}
+								className='rounded-full w-56 h-56 border-4 object-cover  border-black md:w-80 md:h-80'
+								height={250}
+								width={250}
 								sizes={200}
 								src={ProfileImg}
 								alt='self-portrait'
