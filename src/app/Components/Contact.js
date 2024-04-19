@@ -12,9 +12,9 @@ const Contact = () => {
 				<div className='mb-10'>
 					<h2 className='text-3xl font-bold'>Contact</h2>
 				</div>
-				<div className='flex justify-between items-center w-96'>
-					<TfiEmail className='text-4xl' />
-          <a href='mailto:matt.nguyen741@gmail.com' className='text-2xl hover:cursor-pointer hover:hover:text-sky-500'>matt.nguyen741@gmail.com</a>
+				<div className='flex justify-center items-center w-96 md:justify-between'>
+					<TfiEmail className='text-3xl md:text-4xl' />
+          <a href='mailto:matt.nguyen741@gmail.com' className='text-lg ml-3 md:text-2xl hover:cursor-pointer hover:hover:text-sky-500'>matt.nguyen741@gmail.com</a>
 				</div>
 			</div>
     </div>

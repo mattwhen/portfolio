@@ -11,8 +11,8 @@ const Projects = () => {
 		{
 			name: ['Fetchcoin', 'Reel Movie Catalog', 'Thingamabobs'],
 			description: [
-				'A web application that integrates the Postman API to display current prices of the top cryptocurrencies.',
-				'Reel Movie Catalog (RMC) is a forthcoming web application focused on providing users with a user-friendly platform to access and explore a diverse array of movies from a dynamic database. The application aims to eliminate the hassle of selecting the perfect movie by offering detailed information such as summaries, cast details, ratings, and reviews. Users can search for specific movie titles and tailor their results based on keywords, enhancing their ability to make informed decisions and stay updated on their favorite films..',
+				'A web application that integrates the CoinStats API to display current prices of the top cryptocurrencies.',
+				'Reel Movie Catalog (RMC) is a web application focused on providing users with a user-friendly platform to access and explore a diverse array of movies from a dynamic database.',
 				'A full stack e-commerce application that allows users to browse a catalog of items, and proceed to check out. Utilizes user authentcation, which would allow the user to view the entire catalog once a user is signed in.',
 			],
 			img: [fetchcoin, RealMovieCatalog, thingamabobs],
